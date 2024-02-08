@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,100;1,9..40,200;1,9..40,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Dm Sans", sans-serif;
+    color: #FFFFFF;
+    background-color: rgb(24, 22, 22);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    margin-top: 2rem;
+    
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+header ul li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out 0.1s;
+    text-decoration: underline;
+    color: #27AE60;
+}
+
+header img{
+    display: none;
+    filter: brightness(0) invert(1);
+    transform: scale(0.8);
+    cursor: pointer;    
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5rem;
+    gap: 10rem;
+}
+
+.section1 .h2-h6-2btns{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section1 div h2{
+    font-size: 3rem;
+}
+
+.section1 div h6{
+    color: #828282;
+}
+
+
+ .section1 form{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.section1 form .btns{
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.section1 form .btns:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out 0.1s;    
+}
+
+
+.section1 form .btn1{
+    background-color: #27AE60;
+    color: white;
+}
+
+.section1 form .btn2{
+    background-color: rgb(24, 22, 22);
+    color: white;
+    border: 1px solid #F2F2F2;
+}
+
+.section1 img{
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5.5rem;
+}
+
+
+.section2 h2{
+    font-size: 1.7rem;
+}
+
+.section2 p{
+    font-size: 0.8rem;
+}
+
+
+.section2 .coord{
+    display: flex;
+    gap: 8rem;
+    margin-top: 1.3rem;   
+
+}
+
+.section2 .box{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;    
+    align-items: baseline;
+}
+
+.section2 .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+
+}
+
+.section2 .info h3{
+    font-size: 0.8rem;
+}
+
+.section2 .info h6{
+    font-size: 0.6rem;
+}
+
+
+.section2 .big-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #212121;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.section2 .big-circle .small-circle{
+    background-color: #27AE60;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5.5rem;
+}
+
+.section3 .doing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.section3 .domaine p{
+    color: #535353;
+
+}
+
+.section3 .domaine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #212121 ;
+    background-color: #212121;
+    width: 15rem;
+    height: 8rem;
+}
+
+.section3 .domaine:hover{
+    border-bottom-color: #27AE60 ;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5.5rem;
+}
+
+.section4 .skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    border: 1px solid #212121 ;
+    background-color: #212121;
+    width: 55rem;
+    height: 8rem;
+}
+
+.section4 .skill p{
+    color:  #4F4F4F;
+    font-size: 2.5rem;
+}
+
+.section4 .skill h4{
+    color: #27AE60;
+    font-size: 0.8rem;
+}
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    margin-top: 5.5rem;
+}
+
+.section5 .coordonnes{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section5 .inputs{
+    display: flex;
+    gap: 2rem;
+}
+
+.section5 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5 input::placeholder {
+    color:#4F4F4F;
+}
+
+.section5 input{
+    border: none;
+    border-bottom: 1px solid #4F4F4F;
+    background-color: rgb(24, 22, 22);
+    color: white;
+    width: 20rem;
+    height: 2rem;
+}
+
+.section5 textarea{
+    background-color: rgb(24, 22, 22);
+    border-color: #4F4F4F;
+    color: white;
+    width: 42rem;
+    height: 6rem;   
+    padding-top: 0.5rem;
+    margin-top: 2.5rem;
+    text-indent: 0.8rem;
+}
+
+.section5 textarea::placeholder{
+    color:#4F4F4F;
+}
+
+.section5 .boutton{
+    background-color: #27AE60;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1.9rem;
+}
+
+.section5 .boutton:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out 0.1s; 
+    cursor: pointer;   
+}
+
+footer h6{
+    text-align: center;
+    color:#4F4F4F;
+    margin-top: 8rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.6rem;
+}
+
+@media  (max-width: 1024px) {
+    .section1{
+        gap: 4rem;
+    }
+
+    .section1 img{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .section1 div h2{
+        font-size: 2rem;
+    }
+
+    .section1 form .btns{
+        width: 7.5rem;
+        height: 1.8rem;
+    }
+
+    .section3 .domaine{
+        gap: 1rem;
+        width: 13.5rem;
+        height: 7.5rem;
+    }
+
+    .section4 .skills{
+        width: 54rem;
+        height: 7.5rem;
+    }
+}
+
+@media(max-width: 768px){
+    header{
+        margin: 0 3rem;
+        margin-top: 2rem;   
+    }
+
+    header h2{
+        font-size:large;
+    }
+
+    header ul{
+        gap: 1.5rem;
+    }
+
+    .section1{
+        gap: 1rem;
+    }
+
+    .section1 img{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .section1 div h2{
+        font-size: 1.5rem;
+    }
+
+    .section2 .coord{
+        gap: 5rem;
+    }
+
+    .section2 .box{
+        gap: 5rem;
+    }
+
+    .section3 .doing{
+        gap: 3.5rem;
+    }
+
+    .section3 .domaine{
+        width: 12rem;
+        height: 7rem;
+    }
+
+    .section3 .doing .domaine img{
+        transform: scale(0.7);
+    }
+
+    .section3 .domaine{
+        gap: 0.5rem;
+    }
+
+    .section4 .skills{
+        gap: 5.5rem;
+        width: 43rem;
+        height: 6.5rem;
+    }
+
+    .section5 input{
+        width: 15rem;
+        height: 1.5rem;
+    }
+
+    .section5 textarea{
+        width: 32rem;
+        height: 5rem;   
+    }
+
+    .section5 .boutton{
+        width: 7.5rem;
+        height: 2rem;
+    }
+
+}
+    @media (max-width: 426px) {
+
+        header ul{
+            display: none;
+        }
+
+        header img{
+            display: block;
+            margin-left: 15rem ;
+        }
+
+        .section1  .h2-h6-2btns{
+            margin-left: 2.5rem;
+        }
+        
+        .section1 img{
+            display: none;
+        }
+
+
+        .section2 .coord{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }  
+              
+        .section2 p{
+            font-size: 0.6rem;
+        }
+
+        .section2 .box{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+ 
+
+        .section2 .info h3{
+            font-size: 0.7rem;
+        }
+        
+        .section2 .info h6{
+            font-size: 0.5rem;
+        }
+        
+        
+        .section2 .big-circle{
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        .section2 .big-circle .small-circle{
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+
+
+        .section3 .doing{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+       
+
+
+        .section4 .skills{
+            flex-direction: column;
+            width: 10rem;
+            height: 40rem;
+            gap: 5rem;
+        }
+
+        .section5 .inputs{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section5 input{
+            width: 13rem;
+            height: 1.5rem;
+        }
+
+        .section5 textarea{
+            width: 17rem;
+            height: 4rem;   
+        }
+
+        .section5 .boutton{
+            width: 7rem;
+            height: 1.7rem;
+        }
+
+    }
+
+        @media (max-width: 376px){
+            .section1 form .btns{
+                width: 7rem;
+                height: 2rem;
+            }
+
+            .section2 p{
+                font-size: 0.5rem;
+            }
+
+            header img{
+                margin-left: 12.5rem ;
+            }
+        }
